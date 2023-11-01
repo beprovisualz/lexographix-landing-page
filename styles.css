@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+.header{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.my-navbar{
+    background-color: rgb(4, 3, 75);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1;
+    padding: 15px 0px;
+}
+
+.my-navbar span{
+    color: rgb(255, 188, 2);
+}
+
+.navbar-brand{
+    color: white;
+    font-weight: 700;
+}
+
+.my-toggler{
+    background-color: rgb(255, 188, 2);
+}
+
+.nav-link{
+    color: white;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: rgb(255, 188, 2);
+}
+
+.nav-item .nav-link:focus{
+  color: white;
+  background-color: rgba(4, 2, 44, 0.637);
+  padding: 5px 12px;
+  
+}
+
+/**hero**/
+
+.hero{
+    background-image: url(/assets/img1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(4, 3, 63, 0.719); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .display-1{
+    color: white;
+    font-weight: 800;
+    font: size 95px;
+    padding: 0 20px;
+  }
+
+  h1 span{
+    color:rgb(255, 188, 2);
+  }
+
+
+  p.display-6{
+    color: white;
+  }
+
+  p.display-4{
+    font-weight: 700;
+    color: rgb(4, 3, 75);
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(255, 188, 2);
+  }
+
+  .my-btn1{
+    background-color: rgba(255, 188, 2, 0);
+    outline: none;
+    border: rgb(255, 188, 2) 2px solid;
+    color: rgb(255, 188, 2);
+    border-radius: 50px;
+    padding: 10px 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .my-btn1:hover{
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
+    color: rgb(2, 11, 66);
+    outline: none;
+  }
+
+
+  .my-btn2{
+    background-color: rgba(255, 188, 2, 0);
+    outline: none;
+    border: rgb(255, 188, 2) 2px solid;
+    color: rgb(255, 188, 2);
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+
+  .my-btn2:hover{
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
+    color: rgb(2, 11, 66);
+    outline: none;
+  }
+
+/**features**/
+
+h2.display-4{
+  font-weight: 700;
+  color: rgb(4, 3, 75);
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgb(255, 188, 2);
+}
+
+
+.card-img-top{
+  width: 150px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+
+
+button.accordion-button{
+  font-weight: 700;
+  outline: none;
+  border: 0px;
+}
+
+button.accordion-button:focus{
+  background-color: rgb(242, 242, 247);
+  outline: none;
+  box-shadow: none;
+}
+
+button.accordion-button:active{
+  background: rgb(255, 188, 2);
+  outline: none;
+}
+
+button.accordion-button:not(.collapsed){
+  background-color: rgb(255, 188, 2);
+  color: white;
+}
+
+
+
+
+
+  @media  (max-width: 768px){
+    .my-btn2{
+        display: none;
+    }
+
+    .navbar-nav{
+      margin-top: 5px;
+    }
+
+    .featureitem{
+      margin-top: 10px;
+    }
+
+    .display-1{
+      color: white;
+      font-weight: 700;
+      font-size: 50px;
+      padding: 0;
+    }
+
+    
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    .my-btn2{
+        display: none;
+    }
+
+    .featureitem{
+      margin-top: 10px;
+    }
+
+    .display-1{
+      color: white;
+      font-weight: 700;
+      font-size: 50px;
+      padding: 0;
+    }
+
+  }
+  
