@@ -138,7 +138,14 @@ body{
     outline: none;
   }
 
-  
+  .about-col{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-svg{
+    width: 80%;
+  }
 /**features**/
 
 h2.display-4{
@@ -177,6 +184,15 @@ button.accordion-button:active{
 button.accordion-button:not(.collapsed){
   background-color: rgb(255, 188, 2);
   color: white;
+}
+
+
+/**about**/
+.col-sm-6.abt-txt{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 
 /**footer**/
